@@ -41,7 +41,7 @@ $ sudo apt install python3.8
 
 2) Install Pip for installing modules
 
-```bash 
+```bat 
 $sudo apt install python3-pip
 ```
 
