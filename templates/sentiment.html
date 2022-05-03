@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>IMDB Review Sentiment Analysis</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="finalbox">
+        <a href="/"><img src="{{ url_for('static', filename='imdb-logo.png') }}" class="avatar"></a>
+            <h1>Sentiment Analysis</h1>
+            
+            <p  style="text-align: center;">{{ name }}</p>
+            
+                {% if ml_sen == "positive" %}
+                    <p style="color: #008000">ML model prediction:- {{ ml_sen }}</p>
+                    </p><center><p style="font-size: 35px" id="ml_ans">&#128578;</p></center>
+                {% else %}
+                    <p style="color: red">ML model prediction:- {{ ml_sen }}</p>
+                    </p><center><p style="font-size: 35px" id="ml_ans">&#128577;</p></center>
+                {% endif %}
+
+                {% if dl_sen == "positive" %}
+                    <p style="color: #008000">DL model prediction:- {{ dl_sen }} => {{ dl_per }} %</p>
+                    </p><center><p style="font-size: 35px" id="dl_ans" color>&#128578;</p></center>
+                {% else %}
+                    <p style="color: red">DL model prediction:- {{ dl_sen }} => {{ dl_per }} %</p>
+                    </p><center><p style="font-size: 35px" id="dl_ans">&#128577;</p></center>
+                {% endif %}
+            
+            <br>
+            <center><a href="/"><button class="btn btn-light btn-outline-success" id="sendMessageButton">&#8592; Back to Home</button></a>
+            </center>
+            
+        </div>
+
+    </body>
+</html>
