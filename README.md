@@ -108,6 +108,12 @@ $python main.py
 
 > # Output
 
+<hr>
+
 ![sample output](static/first.jpg)
 
+<hr>
+
 ![sample output](static/second.jpg)
+
+<hr>
