@@ -35,7 +35,7 @@ In this project we apply ML and DL algorithms on [IMDB review dataset](https://w
 1) Install python 3.8 or 3.9
 
 ```bash 
-$sudo apt install python3.8
+$ sudo apt install python3.8
 ```
 <hr>
 
