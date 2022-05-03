@@ -1,0 +1,6 @@
+pickle
+nltk
+shutup
+keras
+flask
+textblob
