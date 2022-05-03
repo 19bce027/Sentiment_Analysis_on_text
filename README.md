@@ -42,7 +42,7 @@ $ sudo apt install python3.8
 2) Install Pip for installing modules
 
 ```bat 
-$sudo apt install python3-pip
+$ sudo apt install python3-pip
 ```
 
 <hr>
@@ -50,7 +50,7 @@ $sudo apt install python3-pip
 3) Clone the repo or Download the zip file 
 
 ```bash 
-$git clone https://github.com/19bce027/Sentiment_Analysis_on_text.git
+$ git clone https://github.com/19bce027/Sentiment_Analysis_on_text.git
 ```
 
 <hr>
@@ -59,8 +59,8 @@ $git clone https://github.com/19bce027/Sentiment_Analysis_on_text.git
 4) Create vitual environment and activate it (Activation Method Depends on OS)
 
 ```bash 
-$pip install virtualenv
-$virtualenv venv
+$ pip install virtualenv
+$ virtualenv venv
 ```
 
 - In windows
@@ -72,7 +72,7 @@ $ venv\Scripts\activate
 - In Ubuntu/Linux
 
 ```bash
-$source venv/bin/activate
+$ source venv/bin/activate
 ```
 
 <hr>
@@ -85,7 +85,7 @@ $source venv/bin/activate
 6) Insatll all requriments
 
 ```bash 
-$pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 <hr>
@@ -94,7 +94,7 @@ $pip install -r requirements.txt
 - It's necessary for using wordnet and lemetizer of nltk
 
 ```bash 
-$python -m nltk.downloader all
+$ python -m nltk.downloader all
 ```
 
 <hr>
@@ -103,7 +103,7 @@ $python -m nltk.downloader all
 - keep 'Sentiment_Analysis_on_text' as current directory and run
 
 ```bash 
-$python main.py
+$ python main.py
 ```
 
 > # Output
