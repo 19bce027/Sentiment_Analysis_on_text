@@ -108,6 +108,6 @@ $python main.py
 
 > # Output
 
-![sample output](static/first.jpg)
+![sample output](blob/main/static/first.jpg)
 
-![sample output](static/second.jpg)
+![sample output](blob/main/static/second.jpg)
