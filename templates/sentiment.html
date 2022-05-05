@@ -11,12 +11,13 @@
             <h1>Sentiment Analysis</h1>
             
             <p  style="text-align: center;">{{ name }}</p>
+            <br>
             
                 {% if ml_sen == "positive" %}
-                    <p style="color: #008000">ML model prediction:- {{ ml_sen }}</p>
+                    <p style="color: #008000">ML model prediction:- {{ ml_sen }} => {{ ml_per }} %</p>
                     </p><center><p style="font-size: 35px" id="ml_ans">&#128578;</p></center>
                 {% else %}
-                    <p style="color: red">ML model prediction:- {{ ml_sen }}</p>
+                    <p style="color: red">ML model prediction:- {{ ml_sen }} => {{ ml_per }} %</p>
                     </p><center><p style="font-size: 35px" id="ml_ans">&#128577;</p></center>
                 {% endif %}
 
@@ -25,6 +26,14 @@
                     </p><center><p style="font-size: 35px" id="dl_ans" color>&#128578;</p></center>
                 {% else %}
                     <p style="color: red">DL model prediction:- {{ dl_sen }} => {{ dl_per }} %</p>
+                    </p><center><p style="font-size: 35px" id="dl_ans">&#128577;</p></center>
+                {% endif %}
+
+                {% if tb_sen == "positive" %}
+                    <p style="color: #008000">TextBlob prediction:- {{ tb_sen }} => {{ tb_per }} %</p>
+                    </p><center><p style="font-size: 35px" id="dl_ans" color>&#128578;</p></center>
+                {% else %}
+                    <p style="color: red">TextBlob prediction:- {{ tb_sen }} => {{ tb_per }} %</p>
                     </p><center><p style="font-size: 35px" id="dl_ans">&#128577;</p></center>
                 {% endif %}
             
