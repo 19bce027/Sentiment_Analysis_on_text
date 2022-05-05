@@ -5,6 +5,7 @@ In this project we apply ML and DL algorithms on [IMDB review dataset](https://w
 #### We tried two approaches
 1) Random Forest -- 85% accuracy
 2) LSTM -- 90% accuracy
+3) Textblob
 
 <hr>
 
@@ -114,6 +115,6 @@ $ python main.py
 
 <hr>
 
-![sample output](static/second.jpg)
+![sample output](static/third.jpg)
 
 <hr>
