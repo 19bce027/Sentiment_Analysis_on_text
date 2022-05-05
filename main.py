@@ -114,12 +114,20 @@ def sentiment():
         else :
             ml_sen = 'positive'
         dl_per = predict_lstm(review)[0][0]
-        print(dl_per)
+        print("\nML Prediction -- ",ml_per)
+        print("DL Prediction -- ",dl_per)
         if dl_per>=0.50:
             dl_sen = 'positive'
         else :
             dl_sen = 'negative'
-        return render_template('sentiment.html', name=review,ml_sen=ml_sen,dl_sen=dl_sen,dl_per=round(float(dl_per*100),2))
+        res = TextBlob(review)
+        polar = res.sentiment.polarity
+        if polar>=0:
+            tb_sen = 'positive'
+        else :
+            tb_sen = 'negative'
+        print("Text Blob Prediction -- ",polar,'\n')
+        return render_template('sentiment.html', name=review,ml_sen=ml_sen,ml_per=round(float(ml_per*100),2),dl_sen=dl_sen,dl_per=round(float(dl_per*100),2),tb_sen=tb_sen,tb_per=round(float(polar*100),2))
 
 # predict_lstm("The movie was not good.")
 # predict_ml("The movie was not good.")
