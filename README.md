@@ -4,7 +4,7 @@ In this project we apply ML and DL algorithms on [IMDB review dataset](https://w
 
 #### We tried three approaches
 1) Random Forest -- 85% accuracy
-2) LSTM -- 90% accuracy
+2) LSTM(Longest Short Term memory) -- 90% accuracy
 3) Textblob
 
 <hr>
