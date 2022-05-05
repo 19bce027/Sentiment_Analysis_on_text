@@ -2,7 +2,7 @@
 
 In this project we apply ML and DL algorithms on [IMDB review dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) available on kaggle.
 
-#### We tried two approaches
+#### We tried three approaches
 1) Random Forest -- 85% accuracy
 2) LSTM -- 90% accuracy
 3) Textblob
